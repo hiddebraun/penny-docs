@@ -1,0 +1,24 @@
+site_name: Penny
+theme:
+  name: material
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - attr_list
+  - pymdownx.superfences:
+        # make exceptions to highlighting of code:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom  
+  - pymdownx.details
+
+plugins:
+  - mermaid2
+
+nav:
+  - Home: index.md
+  - Architecture:
+      - Overview: architecture/overview.md
