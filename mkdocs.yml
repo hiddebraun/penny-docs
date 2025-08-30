@@ -1,6 +1,9 @@
 site_name: Penny
 theme:
   name: material
+  logo: assets/logo.png
+  palette:
+    primary: deep orange
 
 markdown_extensions:
   - admonition
@@ -19,15 +22,17 @@ plugins:
   - mermaid2
 
 nav:
-  - Home: index.md
-  - MVP: mvp/index.md
-  - Architecture: architecture/overview.md
-  - Onboarding: onboarding/index.md
-  - Registration: registration/index.md
-  - Authentication: auth/index.md
-  - Chat: chat/index.md
-  - Products: products/index.md
-  - Portfolio: portfolio/index.md
-  - Profile: profile/index.md
-  - Penny Box: penny-box/index.md
-  - Learning Tracks: learning/index.md
+  - mvp/index.md
+  - Architecture:
+    - architecture/overview.md
+    - architecture/api.md
+    - architecture/deployment.md
+  - onboarding/index.md
+  - registration/index.md
+  - auth/index.md
+  - chat/index.md
+  - products/index.md
+  - portfolio/index.md
+  - profile/index.md
+  - penny-box/index.md
+  - learning/index.md
