@@ -20,5 +20,13 @@ plugins:
 
 nav:
   - Home: index.md
-  - Architecture:
-      - Overview: architecture/overview.md
+  - Architecture: architecture/overview.md
+  - Onboarding: onboarding/index.md
+  - Registration: registration/index.md
+  - Authentication: auth/index.md
+  - Chat: chat/index.md
+  - Products: products/index.md
+  - Portfolio: portfolio/index.md
+  - Profile: profile/index.md
+  - Penny Box: penny-box/index.md
+  - Learning Tracks: learning/index.md
