@@ -20,6 +20,7 @@ plugins:
 
 nav:
   - Home: index.md
+  - MVP: mvp/index.md
   - Architecture: architecture/overview.md
   - Onboarding: onboarding/index.md
   - Registration: registration/index.md
