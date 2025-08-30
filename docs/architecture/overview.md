@@ -17,6 +17,8 @@ flowchart LR
 
 ## Backend: FastAPI
 
+More details [here](./api.md)
+
 ```mermaid
 flowchart LR
   API <--> DB[(Postgres)]
