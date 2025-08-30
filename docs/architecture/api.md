@@ -2,16 +2,35 @@
 
 
 ## Registration
+as-is
 
+
+## Assets
+**NOT MVP**
+**for now, everything is static**
+
+GET
+/api/v1/assets/app/{id}
+header{ AUTH=key }
+
+/api/v1/assets/user/{id}
+AUTH=token
+
+## Profile
+POST
+
+* **/api/v1/user/profile**
+
+Json payload - as of old
 
 
 ## Onboarding
+**NOT MVP**
 **FOR NOW IMPLEMENTED STATICALLY**
 
 
 ## PennyBox
 The penny box is populated by the backend based on the context
-
 
 POST
 /api/v1/page/pennybox
