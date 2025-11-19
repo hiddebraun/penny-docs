@@ -39,6 +39,9 @@ uv run mkdocs serve
 
 # Or if dependencies are installed globally
 mkdocs serve
+
+# Or using a different port
+mkdocs serve -a localhost:8080
 ```
 
 The documentation will be available at `http://127.0.0.1:8000` by default. The site will automatically reload when you make changes to the source files.

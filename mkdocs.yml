@@ -28,6 +28,7 @@ nav:
     - architecture/api.md
     - architecture/react-native.md
     - architecture/deployment.md
+  - app/index.md
   - onboarding/index.md
   - registration/index.md
   - auth/index.md
