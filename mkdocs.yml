@@ -1,22 +1,30 @@
 site_name: Penny
+
 theme:
   name: material
   logo: assets/logo.png
   palette:
     primary: deep orange
+  features:
+    - content.code.copy
 
 markdown_extensions:
   - admonition
+  - attr_list
   - toc:
       permalink: true
-  - attr_list
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.superfences:
-      # make exceptions to highlighting of code:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:mermaid2.fence_mermaid_custom
-  - pymdownx.details
 
 plugins:
   - mermaid2
@@ -24,13 +32,13 @@ plugins:
 nav:
   - mvp/index.md
   - Architecture:
-    - architecture/overview.md
-    - architecture/api.md
-    - architecture/react-native.md
-    - architecture/deployment.md
+      - architecture/overview.md
+      - architecture/api.md
+      - architecture/react-native.md
+      - architecture/deployment.md
   - App:
-    - app/index.md
-    - app/deep-linking.md
+      - app/index.md
+      - app/deep-linking.md
   - onboarding/index.md
   - registration/index.md
   - auth/index.md

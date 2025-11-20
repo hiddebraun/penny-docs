@@ -41,16 +41,22 @@ Testing token for hidde.braun@gmail.com account:
 **Geldige token via CLI**
 
 ```bash
+# Android
 adb shell am start -W -a android.intent.action.VIEW -d "https://penny-ai.com/app/verify-account?code=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJoaWRkZS5icmF1bkBnbWFpbC5jb20iLCJleHAiOjE3NjM3Mjg1NzEsInR5cGUiOiJ2ZXJpZmljYXRpb24ifQ.u9FALLJxpm4tQjuOQuzIDSNZ9fWCnZv_dLIQUMugOaI" com.pennyai.app
+```
+
+```bash
+#iOS
+xcrun simctl openurl booted "https://penny-ai.com/app/verify-account?code=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJoaWRkZS5icmF1bkBnbWFpbC5jb20iLCJleHAiOjE3NjM3Mjg1NzEsInR5cGUiOiJ2ZXJpZmljYXRpb24ifQ.u9FALLJxpm4tQjuOQuzIDSNZ9fWCnZv_dLIQUMugOaI"
 ```
 
 **Ongeldige token via CLI**
 
-`````bash
+```bash
 adb shell am start -W -a android.intent.action.VIEW -d "https://penny-ai.com/app/verify-account" com.pennyai.app
 ```
 
-**Ongelidig account via CLI**
+**Ongeldig account via CLI**
 
 ```bash
 # hidde.braun1@gmail.com
