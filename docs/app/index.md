@@ -24,9 +24,12 @@ npx expo run:ios (--no-build-cache)
 
 ```
 
+**Android**
+
 ```bash
 eas build --platform android --profile development
 ```
+**iOS**
 
 ```bash
 eas build --platform ios --profile development
@@ -40,6 +43,29 @@ eas build --platform android --profile preview
 
 ```bash
 eas build --platform ios --profile preview
+```
+
+#### Building locally using EAS
+
+```bash
+# Development
+eas build --local --platform android --profile development
+
+## Preview 
+eas build --local --platform android --profile preview
+```
+
+**iOS Simulator**
+
+```bash
+# For iOS Simulator
+eas build --platform ios --profile ios-simulator --local
+
+# Untar/gzip the build file > Penny.app
+tar -zxvf build-xxxxxxxxxx.tar.gz
+
+# Install it
+xcrun simctl install booted Penny.app
 ```
 
 ## Sharing with Team / Device registration for previewing
